@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#addProject, .hide-form{
+	background-color: rgba(0, 0, 0,0.4);
+	position: relative;
+	display: none;
+	min-height: 100vh;
+	z-index: 9999999999;
+}
+
+#infosProject{
+}
+
+.bg-personal{
+	background-color: #F3F6F9  !important
+}

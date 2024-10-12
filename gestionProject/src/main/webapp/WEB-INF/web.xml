@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>gestionProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.authentification.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AddProjectDetailsServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.chefProject.AddProjectDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddProjectDetailsServlet</servlet-name>
+  	<url-pattern>/chefProject/addtech-meth/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.authentification.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>IndexServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.director.IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>IndexServlet</servlet-name>
+  	<url-pattern>/director/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ChefProjectIndexServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.chefProject.ChefProjectIndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ChefProjectIndexServlet</servlet-name>
+  	<url-pattern>/chefProject/index</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>DevlopperIndexServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.devlopper.DevlopperIndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DevlopperIndexServlet</servlet-name>
+  	<url-pattern>/devlopper/index</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>AddProjectServlet</servlet-name>
+  	<servlet-class> presentationLayer.controllers.director.AddProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddProjectServlet</servlet-name>
+  	<url-pattern>/director/addProject</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DeleteProjectServlet</servlet-name>
+  	<servlet-class> presentationLayer.controllers.director.DeleteProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteProjectServlet</servlet-name>
+  	<url-pattern>/director/deleteP/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UpdateProjectServlet</servlet-name>
+  	<servlet-class> presentationLayer.controllers.director.UpdateProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateProjectServlet</servlet-name>
+  	<url-pattern>/director/modifyP</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServicesServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.chefProject.ServicesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServicesServlet</servlet-name>
+  	<url-pattern>/chefProject/services</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DeveloppersControleServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.chefProject.DeveloppersControleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeveloppersControleServlet</servlet-name>
+  	<url-pattern>/chefProject/DeveloppersControleServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>NotificationServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.notification.NotificationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>NotificationServlet</servlet-name>
+  	<url-pattern>/notification/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AffecteServicesServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.chefProject.AffecteServicesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AffecteServicesServlet</servlet-name>
+  	<url-pattern>/chefProject/affecte-services/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>VerifyProjectServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.director.VerifyProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>VerifyProjectServlet</servlet-name>
+  	<url-pattern>/chefProject/verify/projectName</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ConsulterProjetServiceServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.devlopper.ConsulterProjetServiceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ConsulterProjetServiceServlet</servlet-name>
+  	<url-pattern>/devlopper/consulterP/*</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>ProfilDevServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.devlopper.ProfilDevServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProfilDevServlet</servlet-name>
+  	<url-pattern>/devlopper/profilDev</url-pattern>
+  </servlet-mapping>
+     
+     <servlet>
+  	<servlet-name>ModifyDevProfileServlet</servlet-name>
+  	<servlet-class>presentationLayer.controllers.devlopper.ModifyDevProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ModifyDevProfileServlet</servlet-name>
+  	<url-pattern>/devlopper/modify/profil</url-pattern>
+  </servlet-mapping>
+     
+</web-app>
